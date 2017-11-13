@@ -8,8 +8,8 @@ abilities:
   - name: Bone Crusher
     effect: |
       one shots prey
-
-  - name: bite Drag
+      
+  - name: Bite Drag
     effect: |
       drags prey into water
       
