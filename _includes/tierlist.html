@@ -14,7 +14,7 @@
     {% for item in builds-in-tier.items %}
     <li class="item">
       <a href="{{item.url}}">
-	<img src="/assets/build-icons/{{item.icon | default: item.slug}}" alt="{{item.title}}" title="{{item.title}}">
+	<img src="{{item.icon | relative_url}}" alt="{{item.title}}" title="{{item.title}}">
       </a>
     </li>
     {% endfor %}

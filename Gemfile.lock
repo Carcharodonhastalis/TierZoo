@@ -5,11 +5,8 @@ GEM
       public_suffix (>= 2.0.2, < 4.0)
     coderay (1.1.2)
     colorator (1.1.0)
-    concurrent-ruby (1.0.5)
     ffi (1.9.18)
     forwardable-extended (2.6.0)
-    i18n (0.9.1)
-      concurrent-ruby (~> 1.0)
     jekyll (3.6.2)
       addressable (~> 2.4)
       colorator (~> 1.0)
@@ -40,10 +37,6 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.7)
     mercenary (0.3.6)
     method_source (0.9.0)
-    monetize (1.7.0)
-      money (~> 6.9)
-    money (6.10.0)
-      i18n (>= 0.6.4, < 1.0)
     pathutil (0.16.0)
       forwardable-extended (~> 2.6)
     pry (0.11.2)
@@ -70,7 +63,6 @@ DEPENDENCIES
   jekyll-paginate
   jekyll-sitemap
   jekyll-swiss
-  monetize
   pry
   tzinfo-data
 

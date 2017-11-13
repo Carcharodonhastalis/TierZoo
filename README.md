@@ -17,6 +17,7 @@ Glad you asked. I made a checklist.
 - [ ] Style build pages to show all the info nicely.
 - [ ] Skill trees. Just anything on them in general.
 - [ ] Allow for sorting by nerdy things like kingdom and phylum.
+- [ ] Static stat bar ordering
 - [ ] ...And much more! That I haven't thought of yet!
 
 ## Build Articles
@@ -104,4 +105,24 @@ On that note, if you want to split a long description over two lines and want to
       - hp: 50
       - stl: 85
 	  
-Alright you know these. Keep in mind they go from 0 to 100.
+These are integers that range from 0 to 100- all stats hashes must have these
+keys with integer numbers and nothing else in their fields. If you want to 
+add a qualifier like an aquatic animal having higher mobility in water, I 
+recommend putting the stat of the state they're most often in and elaborating 
+on the alternate in the main article body- for example:
+
+    - mbl: 60 on land, 95 in water
+	
+doesn't work and will make the file bug out and not be read.
+
+    - spd: 80
+
+replacing mbl(mobility) for spd(speed) is also a common mistake.
+
+That said, the order of the stats shouldn't matter. Later on I'll add a static 
+ordering mechanism so rearranging them is still valid but keeps the stat bar 
+orders the same across builds.
+
+### How do I put an icon on my build?
+Just put your image file in the "assets/build-icons" folder with the same name 
+as the build file. The extension is ignored.
