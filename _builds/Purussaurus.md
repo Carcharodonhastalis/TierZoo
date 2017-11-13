@@ -24,6 +24,5 @@ stats:
   - hp: 90 (Weight: 8.4 Tonnes)
   - stl: 100
 ---
-King of the Crocodiles, None dare challenge this Miocene monstrosity
 
 Expansion: Miocene
