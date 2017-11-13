@@ -1,6 +1,5 @@
 ---
 name: Jaguar
-base: Cat
 tiers:
   main: 
     tier: A
@@ -26,3 +25,4 @@ stats:
   - hp: 50
   - stl: 85
 ---
+The actual king of the jungle- even Crocodile players fear this perfect assassin.
