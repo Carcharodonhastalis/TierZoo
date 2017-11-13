@@ -1,0 +1,11 @@
+---
+title: Metagames
+layout: page
+---
+{% assign metagames = site.metagames %}
+<div class="metagames">
+  {% for meta in metagames %}
+  <a href="{{meta.url}}"><h1>{{meta.title}}</h1></a>
+  {% endfor %}
+</div>
+

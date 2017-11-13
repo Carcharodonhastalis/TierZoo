@@ -1,0 +1,75 @@
+.stats {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+    .stat {
+	margin: 0 0.2em;
+	width: 2.5em;
+	text-transform: uppercase;
+	font-size: modular-scale(-1);
+    }
+
+    .bar {
+	height: 10em;
+	position: relative;
+	width: 1.6em;
+	margin: auto;
+    }
+    .bar-fill {
+	background-color: white;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+    }
+}
+
+.stat-int {
+    .bar-fill {
+	background: #FFF;
+    }
+    .name {
+	color: #FFF;
+    }
+}
+
+.stat-pwr {
+    color: $bright-red;
+    .bar-fill {
+	background: $bright-red;
+    }
+}
+
+.stat-def {
+    color: $light-blue;
+    .bar-fill {
+	border: 3px solid $medium-gray;
+	background: $light-blue;
+    }
+}
+
+.stat-mbl {
+    color: $yellow;
+    .bar-fill {
+	background: $yellow;
+    }
+}
+
+.stat-hp {
+    color: $pink;
+    .bar-fill {
+	background: $pink;
+    }
+}
+
+.stat-stl {
+    color: white;
+    .bar-fill {
+	background: $dark-gray;
+	border: 1px dashed #FFF;
+    }
+}

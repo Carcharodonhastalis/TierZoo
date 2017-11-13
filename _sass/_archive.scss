@@ -1,0 +1,42 @@
+$border: 1px solid $light-gray;
+
+.archive {
+    ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+    }
+}
+
+.flex-right {
+    flex: 1;
+    text-align: right;
+}
+
+ul.archive-months {
+    h3 {
+	text-align: center;
+	margin: 0.15em;
+	padding: 0;
+    }
+    >li {
+	display: block;
+	border: $border;
+	margin-bottom: 1em;
+    }
+}
+
+ul.archive-days {
+    >li {
+	display: flex;
+	padding: 0 0.5em;
+	border-top: $border;
+	date {
+	    font-weight: bold;
+	}
+	>ul {
+	    flex: 1;
+	    text-align: right;
+	}
+    }
+}

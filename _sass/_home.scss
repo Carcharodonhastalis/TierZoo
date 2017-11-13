@@ -1,0 +1,43 @@
+h2 {
+    font-size: modular-scale(2);
+}
+.home-content{
+    text-align: justify;
+    >div {
+        display: inline-block;
+        max-width: 400px;
+        text-align: left;
+    }
+    h4 {
+	&, &+p {
+	    background-color: #EBA;
+	    border: 1px solid #A21;
+	}
+	margin-bottom: 0;
+	padding-bottom: 0;
+	text-align: center;
+	&+p {
+	    padding: 0 0.5em 0.25em 0.5em;
+	    border-top: none;
+	}
+    }
+}
+.posts{ border-top: $border; }
+.post {
+    border-bottom: $border;
+    h4 {
+	margin: 0;
+	padding: 0;
+    }
+    .flex-header {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: baseline;
+    }
+    date {
+	flex: 1;
+    }
+    date {
+	text-align: right;
+    }
+}

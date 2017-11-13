@@ -1,0 +1,17 @@
+<ul class='stats'>
+    {% for stat in include.stats %}
+    {% for stat_pair in stat %}
+    {% assign name = stat_pair[0] %}
+    {% assign score = stat_pair[1] %}
+    <li class="stat stat-{{name}}">
+	<div class="bar" >
+	    <div class="bar-fill" style="height: {{score}}%"></div>
+	</div>
+	<div class="icon">
+	    <img src="/assets/stat_icons/{{name}}" alt="">
+	    <div class="name">{{name}}</div>
+	</div>
+    </li>
+    {% endfor %}
+    {% endfor %}
+</ul> 

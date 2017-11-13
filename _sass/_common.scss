@@ -1,0 +1,24 @@
+// A bottom-left corner info box.
+// Make sure to set its parent to relative.
+.info {
+    background-color: #DDDDDDDD;
+    width: auto;
+    height: auto;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    padding: 0.5em 0.75em;
+    border-radius: 0 15px 0 0;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    
+    >* {
+	display: inline-block;
+    }
+}

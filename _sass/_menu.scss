@@ -1,0 +1,88 @@
+$border: 1px solid $light-gray;
+
+.bill-of-fare {
+    font-size: 14px;
+    // Basic
+    p {
+	margin: 0;
+	display: inline-block;
+    }
+
+    h2 {
+	font-size: modular-scale(2);
+	padding: 0.25em;
+	margin: 0;
+    }
+
+    .price {
+	margin-left: 0.5em;
+    }
+
+    // Lists
+    ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	border-top: $border;
+
+	li { border-bottom: $border; }
+    }
+
+    // Item
+    .items {
+	padding: 0;
+    }
+    .item {
+	display: flex;
+	flex-flow: row no-wrap;
+	>* {
+	    padding: 0 0.25em;
+	}
+    }
+    .item-info {
+	flex: 1;
+    }
+
+    .collapse-title {
+	.item-info {
+	    * { display: inline; }
+	}
+    }
+
+    .item-name {
+	font-weight: bold;
+    }
+    
+    .category {
+	border: $border;
+	margin: 0 0 0.5em 0;
+    }
+
+    .category-before, .category-after {
+	padding: 0.25em;
+    }
+    .category-before {
+	border-top: $border;
+    }
+    .category-after {
+	border-bottom: $border;
+    }
+
+    // Inner tables
+    table {
+	table-layout: auto;
+	border-collapse: separate;
+	border-spacing: 0;
+	padding: 0;
+	margin: 0;
+	td, th {
+	    margin: 0;
+	    padding: 0.25em;
+	    text-align: center;
+	    &:first-of-type {
+		text-align: left;
+	    }
+	}
+    }
+}

@@ -1,0 +1,21 @@
+iframe {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.about {
+    font-size: modular-scale(1);
+    h3 {
+	margin: 0;
+	text-align: center;
+    }
+    >div {
+	
+    }
+    margin: 0 0 16px;
+}
+
+.about-hours {
+    text-align: center;
+}

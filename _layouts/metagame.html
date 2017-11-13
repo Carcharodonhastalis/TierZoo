@@ -1,0 +1,9 @@
+---
+layout: page
+---
+<div class="description">
+  {{ page.content }}
+</div>
+<div class="tierlist">
+  {% include tierlist.html builds=page.builds metagame=page.slug %}
+</div>

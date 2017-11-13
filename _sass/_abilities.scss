@@ -1,0 +1,22 @@
+.ability {
+    border: 1px solid $yellow;
+    text-align: center;
+    padding: 0.5em 0;
+    *{
+	line-height: normal;
+	font-family: "Open Sans";
+    }
+    h3 {
+	color: $light-blue;
+	font-style: italic;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+    }
+    div {
+	color: $yellow;
+	font-size: modular-scale(-1);
+	font-weight: bold;
+    }
+}

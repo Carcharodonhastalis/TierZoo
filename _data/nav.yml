@@ -1,0 +1,8 @@
+main:
+  items:
+    - title: Metas
+      url: "metagames"
+
+    - title: About
+      url: "about"
+

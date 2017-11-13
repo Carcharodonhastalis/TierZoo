@@ -1,0 +1,43 @@
+.tier {
+    display: flex;
+    flex-flow: row no-wrap;
+    margin: 0.5em 0;
+    align-items: center;
+
+    ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+    }
+    
+    h1, h2 {
+	margin: 0;
+	padding: 0;
+	line-height: normal;
+    }
+    h1 {
+	font-family: 'Press Start 2P';
+	width: 1em;
+	margin-right:0.25em;
+	text-align: left;
+	font-weight: normal;
+    }
+    .items {
+	flex: 1;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: middle;
+    }
+    .item {
+	display: inline-block;
+	height: 3em;
+	margin: 0.5em;
+	text-align: center;
+	img {
+	    font-size: modular-scale(1);
+	    height: 100%;
+	    width: auto;
+	    line-height: 48px;
+	}
+    }
+}

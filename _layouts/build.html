@@ -1,0 +1,18 @@
+---
+layout: page
+---
+<div class="content">
+    {{page.content}}
+</div>
+<div class="stats" >
+    {% include stats.html stats=page.stats %}
+</div>
+<div class="abilities">
+    <h2>Abilities</h2>
+    {% for ability in page.abilities %}
+    <div class="ability">
+	<h3>{{ability.name}}</h3>
+	<div>{{ability.effect}}</div>
+    </div>
+    {% endfor %}
+</div>

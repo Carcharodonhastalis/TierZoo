@@ -1,0 +1,56 @@
+.show-listing {
+    h3 {
+	margin: 0;
+	line-height: 1;
+    }
+    max-width: 350px;
+    border: 1px solid gray;
+    padding: 0.5em;
+    border-radius: 5px;
+    height: 150px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    
+    background-size: cover;
+    background-position: top;
+
+    margin: 0 0 0.5em 0;
+
+    
+    a {
+	color: inherit;
+	&:hover {
+	    text-decoration: inherit;
+	}
+    }
+}
+
+.show-small {
+    display: flex;
+    flex-flow: row wrap;
+
+    font-size: 14px;
+
+    $border: 1px solid gray;
+    border-bottom: $border;
+    &:first-of-type {
+	border-top: $border;
+    }
+    
+    >* {
+	white-space: nowrap;
+    }
+    
+    date {
+	text-align: left;
+    }
+    span {
+	text-align: right;
+	flex: 1;
+    }
+}
+
+.shows {
+    text-align: justify;
+}

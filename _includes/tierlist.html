@@ -1,0 +1,23 @@
+{% assign builds = include.builds | default: site.builds %}
+
+{% assign metagame = include.metagame | default: 'main' %}
+{% capture expression %}build.tiers.{{metagame}}.tier{% endcapture %}
+{% assign builds-by-tier = builds | group_by_exp: "build", expression %}
+
+{% for tier in site.data.tiers %}
+{% assign tier-name = tier[0] %}
+{% assign tier-settings = tier[1] %}
+<div class="tier {{tier-name}}-tier">
+  <h1 style="color: {{tier-settings.color}};">{{ tier-name }}</h1>
+  <ul class="items" style="background-color: {{tier-settings.color}};">
+    {% assign builds-in-tier = builds-by-tier | where: "name", tier-name | first %}
+    {% for item in builds-in-tier.items %}
+    <li class="item">
+      <a href="{{item.url}}">
+	<img src="/assets/build-icons/{{item.icon | default: item.slug}}" alt="{{item.title}}" title="{{item.title}}">
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endfor %}
